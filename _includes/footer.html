@@ -1,0 +1,37 @@
+<section id="footer">
+    <div class="inner">
+        <h2 class="major">Связаться</h2>
+        <p>Вы можете позвонить, написать нам письмо по электронной почте или непосредственно прийти в гости, но вы также можете написать все что хотите в форме ниже. В любом случае мы будем рады вам помочь по любым вопросам. Если у вас есть претензии по работе сайта или работе наших магазин, напишите претензию в форме ниже и администрация обязательно прочтет ваше письмо.</p>
+        <form method="post" action="#">
+            <div class="field">
+                <label for="name">Ваше имя</label>
+                <input type="text" name="name" id="name" />
+            </div>
+            <div class="field">
+                <label for="email">Электропочта</label>
+                <input type="email" name="email" id="email" />
+            </div>
+            <div class="field">
+                <label for="message">Текст сообщения</label>
+                <textarea name="message" id="message" rows="4"></textarea>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Отправить сообщение" /></li>
+            </ul>
+        </form>
+        <ul class="contact">
+            <li class="fa-home">{{ site.address }}</li>
+            <li class="fa-phone">{{ site.phone }}</li>
+            <li class="fa-fax">{{ site.fax }}</li>
+            <li class="fa-envelope"><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {% for social in site.socials %}
+            <li class="fa-{{ social.class }}"><a href="https://{{ social.url }}">{{ social.url }}</a></li>
+            {% endfor %}
+            <!--<li class="fa-rss"><a href="{{ '/feed.xml' | prepend: site.baseurl }}">Подписаться на новости через RSS</a></li>-->
+        </ul>
+        <ul class="copyright">
+            <li>{{ site.time | date: '%Y' }} &copy; <a href="{{ site.partnerurl }}" target="_blank">ООО «БКЗ»</a>. Все права защищены.</li>
+            <li>Разработка и сопровождение сайта: <a href="https://limydesign.ru" target="_blank">LimyDesing Studio</a></li>
+        </ul>
+    </div>
+</section>

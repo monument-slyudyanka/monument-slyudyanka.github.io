@@ -1,0 +1,34 @@
+# Site settings
+title: Памятники в Слюдянке
+slogan: "ООО «Байкальский камнераспиловочный завод»"
+email: bspp@rambler.ru
+phone: "+7 (3952) 41-80-08"
+fax: "+7 (3952) 41-80-08"
+address: >
+  664033, Россия, г. Иркутск<br>
+  ул. Старокузьмихинская, 41д<br>
+  <a href="http://2gis.ru/irkutsk/geo/1548748027082015/firm/1548640652898251?queryState=center%2F104.283788%2C52.241317%2Fzoom%2F18" target="_blank">Посмотреть на карте</a>
+description: >
+  ООО «Байкальский камнераспиловочный завод» предлагает самый широкий выбор памятников и других изделий из мрамора и гранита собственного производства, позволяющего предлагать комплекты памятников из натурального камня по самым низким ценам в регионе.
+baseurl: ""
+url: "https://xn--80aalpalcgfkfp6aj0qij.xn--p1ai"
+partnerurl: "http://bs2p.ru"
+social:
+
+# Build settings
+markdown: kramdown
+
+# Permalinks
+permalink: none
+
+# Files/Folders to be excluded from generated _site folder
+exclude:
+  - CNAME
+  - .gitignore
+  - .sass-cache
+  - README.md
+
+# Sass conversion config
+sass:
+  sass_dir: assets/css/_sass
+  style: compressed

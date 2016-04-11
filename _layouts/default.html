@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% include head.html %}
+<body>
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        {% include header.html %}
+
+        <!-- Menu -->
+        {% include menu.html %}
+
+        <!-- Wrapper -->
+        <section id="wrapper">
+            {{ content }}
+        </section>
+
+        <!-- Footer -->
+        {% include footer.html %}
+
+    </div>
+
+<!-- Scripts -->
+{% include scripts.html %}
+</body>
+</html>

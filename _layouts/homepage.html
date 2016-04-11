@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% include head.html %}
+<body>
+
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+
+    <!-- Header -->
+    {% include header.html %}
+
+    <!-- Menu -->
+    {% include menu.html %}
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="inner">
+            <div class="logo">
+                <span class="icon fa-diamond"></span>
+            </div>
+            <h2>{{ site.title }}</h2>
+            <p>{{ site.slogan }}</p>
+        </div>
+    </section>
+
+    <!-- Wrapper -->
+    <section id="wrapper">
+        {{ content }}
+    </section>
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+</div>
+
+<!-- Scripts -->
+{% include scripts.html %}
+</body>
+</html>
